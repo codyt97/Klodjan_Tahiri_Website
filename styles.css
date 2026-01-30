@@ -285,4 +285,12 @@ h1{
   .nav-toggle{ display:inline-flex; }
   .nav-mobile.show{ display:flex; }
 }
- 
+
+/* Progressive enhancement:
+   If JS fails to load, content should still be visible.
+*/
+.no-js .reveal{
+  opacity: 1 !important;
+  transform: none !important;
+}
+
