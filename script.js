@@ -59,3 +59,4 @@ const ioActive = new IntersectionObserver(
 );
 
 sections.forEach((s) => ioActive.observe(s));
+   
