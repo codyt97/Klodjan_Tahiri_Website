@@ -1,3 +1,5 @@
+document.documentElement.classList.remove("no-js");
+
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
