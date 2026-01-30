@@ -1,7 +1,9 @@
 document.documentElement.classList.remove("no-js");
 
 // Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 
 // Mobile nav toggle
 const toggle = document.querySelector(".nav-toggle");
@@ -26,6 +28,8 @@ if (toggle && mobile) {
 
 // Reveal on scroll
 const reveals = Array.from(document.querySelectorAll(".reveal"));
+reveals.forEach((el) => el.classList.add("will-reveal"));
+
 const io = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
