@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 15 23 42; /* slate-900 */
+  --muted: 100 116 139; /* slate-500 */
+  --line: 226 232 240; /* slate-200 */
+  --accent: 16 185 129; /* emerald-500 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.25);
+}
